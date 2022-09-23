@@ -1,0 +1,29 @@
+<form>
+        <h4 class="text-center">Agregar Alumno</h4>
+      <div class="form-group">
+        <label for="nombre" class="form-label mt-4">Nombre</label>
+        <input type="text" [(ngModel)]="student.nombre"  class="form-control" id="nombre" name="nombre"   placeholder="Ingresa un nombre">
+      </div>
+      <div class="form-group">
+        <label for="apellido" class="form-label mt-4">Apellido</label>
+        <input type="text" class="form-control"[(ngModel)]="student.apellido"id="apellido" name="apellido"    placeholder="Ingresa un apellido">
+      </div>
+      <div class="form-group">
+        <label for="dni" class="form-label mt-4">DNI</label>
+        <input type="number" class="form-control" [(ngModel)]="student.dni" id="dni" name="dni" placeholder="Ingresa un DNI">
+      </div>
+      <div class="form-group">
+        <label for="telefono"   class="form-label mt-4">Telefono</label>
+        <input type="text"[(ngModel)]="student.telefono" class="form-control" id="telefono"name="telefono" placeholder="Ingresa un telefono">
+      </div>
+      <div class="form-group">
+        <label for="legajo" class="form-label mt-4">Legajo</label>
+        <input type="number"[(ngModel)]="student.legajo" class="form-control" id="legajo" name="legajo" placeholder="Ingresa un Legajo">
+      </div>
+      <div class="form-group">
+        <label for="notas" class="form-label mt-4">Suma de tus tres notas</label>
+        <input type="number"[(ngModel)]="student.sumaDeNotas"  class="form-control"  id="notas" name="notas" placeholder="Ingresa la suma de las notas">
+      </div>
+      <input type="submit" (click)="sendStudent()" style="width: 100%;"  class="btn btn-primary btn-block mt-3">
+
+  </form>
